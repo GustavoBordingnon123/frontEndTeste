@@ -1,8 +1,8 @@
-import React from "react";
 import Input from "../../components/Input";
 import Button from "../../components/Button"
 
 export default function NewData({ inputData, textosPrincipais }) {
+
     const styles = {
         container: {
             display: 'flex',
@@ -10,6 +10,10 @@ export default function NewData({ inputData, textosPrincipais }) {
             justifyContent: 'center',
             alignItems: 'center',
             paddingTop: '5%'
+        },
+        buttonContainer: {
+            marginTop:'20px',
+            marginBottom:'20px'
         },
         title: {
             fontSize: '32px',
@@ -30,7 +34,10 @@ export default function NewData({ inputData, textosPrincipais }) {
                 />
             ))}
             
-            <Button text='enviar'/>
+            <div style={styles.buttonContainer}>
+                <Button text='enviar'/>
+            </div>
+
         </div>
     )
 }

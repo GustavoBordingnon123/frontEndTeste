@@ -70,6 +70,11 @@ export default function VendasViewPage() {
         main: {
             padding: "2% 5%"
         },
+        buttonContainer: {
+            position: isMobile ? 'relative' : '',
+            left: isMobile ? '25%' : '',
+            marginBottom: isMobile ? '50px' : '10px',
+        },
         container: {
             display: 'flex',
             flexWrap: 'wrap',
@@ -86,8 +91,11 @@ export default function VendasViewPage() {
                     <Card key={item.ID_VENDA} data={item} style={{ margin: "0 10px" }} />
                 ))}
             </div>
+            
+            <div style={styles.buttonContainer}>
+                <Button text="Adicionar nova venda" link={"/newVenda"}/>
+            </div>
 
-            <Button text="Adicionar nova venda" link={"/newVenda"}/>
         </main>
     );
 }

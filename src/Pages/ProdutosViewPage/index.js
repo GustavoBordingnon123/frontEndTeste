@@ -49,6 +49,11 @@ export default function ProdutosViewPage() {
         main: {
             padding: "2% 5%"
         },
+        buttonContainer: {
+            position: isMobile ? 'relative' : '',
+            left: isMobile ? '25%' : '',
+            marginBottom: isMobile ? '50px' : '10px',
+        },
         container: {
             display: 'flex',
             flexWrap: 'wrap',
@@ -73,7 +78,10 @@ export default function ProdutosViewPage() {
                 ))}
             </div>
 
-            <Button text="Adicionar novo produto" link={"/newProduto"} />
+            <div style={styles.buttonContainer}>
+                <Button text="Adicionar novo produto" link={"/newProduto"} />
+            </div>
+        
         </main>
     );
 }

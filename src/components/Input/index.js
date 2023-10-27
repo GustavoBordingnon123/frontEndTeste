@@ -6,7 +6,7 @@ export default function Input({ label, placeholder }) {
             display: 'flex',
             flexDirection: 'column',
             marginTop:'15px',
-            marginBottom:'15px'
+            marginBottom:'15px',
         },
         input: {
             width: '200px',

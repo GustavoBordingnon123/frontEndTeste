@@ -13,6 +13,7 @@ export default function Button({text, link}){
             borderRadius:'5px',
             color:'white',
             cursor:'pointer',
+            padding: '10px 20px',
         },
     };
 
